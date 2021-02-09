@@ -56,7 +56,6 @@ grammar_cjkRuby: true
         return -1;
     }
 
-
 ```
 
 
