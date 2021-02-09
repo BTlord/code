@@ -33,9 +33,9 @@ grammar_cjkRuby: true
 ```java
 
     public static int binarySearch(int[] arr, int target) {
-        int begin = 0;      
+        int left = 0;      
         //定义起点,也就是左边的游尺
-        int end = arr.length - 1;   
+        int right = arr.length - 1;   
         //定义刚刚开始的终点,也就是右边的游尺
         while (begin <= end) {      
         //加入循环,使得左游尺永远小于右游尺,如果擦肩而过,就退出循环
