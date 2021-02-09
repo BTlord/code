@@ -37,12 +37,15 @@ grammar_cjkRuby: true
         //定义起点,也就是左边的游尺
         int right = arr.length - 1;   
         //定义刚刚开始的终点,也就是右边的游尺
+        
         while (begin <= end) {      
         //加入循环,使得左游尺永远小于右游尺,如果擦肩而过,就退出循环
+            
             int indexOfMid = begin + ((end - begin) >> 1);
             //寻找中间索引
             int mid = arr[indexOfMid];
             //寻找中间索引的值
+            
             //接下来,进行判断
             if (target > mid) {         
             //左游尺往右走
