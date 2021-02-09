@@ -13,8 +13,10 @@ grammar_cjkRuby: true
 ## 普通查找
 ```java
     public static int indexof(int[] arr, int target) {
+        
         int res = -1;
         //设置一个最终结果的初始值为-1
+       
         for (int i = 0; i < arr.length; i++) {
         //开始循环
             if (arr[i] == target) {
@@ -33,6 +35,7 @@ grammar_cjkRuby: true
 ```java
 
     public static int binarySearch(int[] arr, int target) {
+        
         int left = 0;      
         //定义起点,也就是左边的游尺
         int right = arr.length - 1;   
