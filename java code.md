@@ -14,8 +14,11 @@ grammar_cjkRuby: true
 ```java
     public static int indexof(int[] arr, int target) {
         int res = -1;
+        //设置一个最终结果的初始值为-1
         for (int i = 0; i < arr.length; i++) {
+        //开始循环
             if (arr[i] == target) {
+            //如果相等,使得结果等于索引
                 res = i;
                 break;
             }
