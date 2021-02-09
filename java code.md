@@ -27,6 +27,37 @@ grammar_cjkRuby: true
 
 ## 二分查找
 
+```java
+
+    public static int binarySearch(int[] arr, int target) {
+        int begin = 0;      
+        //定义起点,也就是左边的游尺
+        int end = arr.length - 1;   
+        //定义刚刚开始的终点,也就是右边的游尺
+        while (begin <= end) {      
+        //加入循环,使得左游尺永远小于右游尺,如果擦肩而过,就退出循环
+            int indexOfMid = begin + ((end - begin) >> 1);
+            //寻找中间索引
+            int mid = arr[indexOfMid];
+            //寻找中间索引的值
+            //接下来,进行判断
+            if (target > mid) {         
+            //左游尺往右走
+                begin = indexOfMid + 1;
+            } else if (target < mid) {  
+            //右游尺往左走
+                end = indexOfMid - 1;
+            } else {                    
+            //如果和中间值相等,返回找到的索引
+                return indexOfMid;
+            }
+        }
+
+        return -1;
+    }
+
+
+```
 
 
 
