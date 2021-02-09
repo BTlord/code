@@ -8,7 +8,7 @@ grammar_cjkRuby: true
 
 ---
 
-# 关于二分查找 <i class="fas fa-coffee"></i>
+# 关于查找 <i class="fas fa-coffee"></i>
 
 ## 普通查找
 ```java
@@ -22,7 +22,12 @@ grammar_cjkRuby: true
         }
         return res;
     }
+    //结果返回target索引
 ```
+
+## 二分查找
+
+
 
 
 
