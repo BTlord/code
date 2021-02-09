@@ -51,13 +51,13 @@ grammar_cjkRuby: true
             
             //接下来,进行判断
             if (target > mid) {         
-            //左游尺往右走
+                //左游尺往右走
                 begin = indexOfMid + 1;
             } else if (target < mid) {  
-            //右游尺往左走
+                //右游尺往左走
                 end = indexOfMid - 1;
             } else {                    
-            //如果和中间值相等,返回找到的索引
+                //如果和中间值相等,返回找到的索引
                 return indexOfMid;
             }
         }
