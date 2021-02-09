@@ -57,6 +57,7 @@ grammar_cjkRuby: true
         }
 
         return -1;
+        //如果都没有找到,则返回-1
     }
 
 ```
