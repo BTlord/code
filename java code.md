@@ -1,5 +1,5 @@
 ---
-title: java code record
+title: java code 
 tags: code,btlord
 renderNumberedHeading: ture
 grammar_cjkRuby: true
@@ -8,7 +8,9 @@ grammar_cjkRuby: true
 
 ---
 
-# 二分查找 <i class="fas fa-coffee"></i>
+# 关于二分查找 <i class="fas fa-coffee"></i>
+
+## 普通查找
 ```java
     public static int indexof(int[] arr, int target) {
         int res = -1;
