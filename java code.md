@@ -109,6 +109,32 @@ public class bubbleSort {
     }
 }
 ```
+# 插入排序
+==2021年02月10日 16时41分52秒 #9C27B0==
+```java
+    //array[]为待排序数组，n为数组长度
+
+    void selectSort(int array[], int n) {
+        int i, j, min, k;
+        for (i = 0; i < n - 1; i++) {
+        
+            min = i; //每趟排序最小值先等于第一个数，遍历剩下的数
+            for (j = i + 1; j < n; j++){
+                 //从i下一个数开始检查
+                if (array[min] > array[j]) {
+                    min = j;
+                }
+            }
+            
+            if (min != i) {
+                k = array[min];
+                array[min] = array[i];
+                array[i] = k;
+            }
+        }
+
+    }
+```
 
 
 
