@@ -95,7 +95,7 @@ public class bubbleSort {
         for (i = 0; i < arr.length - 1; i++)
 
             for (j = 0; j < arr.length - i - 1; j++) {
-
+                //这个for的j使得程序不去管理排好了的结尾的数 (-i)
                 if (arr[j] > arr[j + 1]) {
 
                     //如果当前位置更大,进行交换
