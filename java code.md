@@ -88,6 +88,7 @@ public class bubbleSort {
 //            System.out.println(num);
         System.out.println(Arrays.toString(a));
     }
+    
     private static void bubblesort(int[] arr) {
         
         int i, j;
@@ -109,7 +110,7 @@ public class bubbleSort {
     }
 }
 ```
-# 插入排序
+# 选择排序
 ==2021年02月10日 16时41分52秒 #9C27B0==
 ```java
     //array[]为待排序数组，n为数组长度
