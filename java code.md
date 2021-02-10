@@ -51,13 +51,16 @@ grammar_cjkRuby: true
             //寻找中间索引的值
             
             //接下来,进行判断
-            if (target > mid) {         
+            if (target > mid) { 
+            
                 //左游尺往右走
                 begin = indexOfMid + 1;
-            } else if (target < mid) {  
+            } else if (target < mid) { 
+            
                 //右游尺往左走
                 end = indexOfMid - 1;
-            } else {                    
+            } else { 
+            
                 //如果和中间值相等,返回找到的索引
                 return indexOfMid;
             }
@@ -69,7 +72,42 @@ grammar_cjkRuby: true
 
 ```
 # 冒泡排序
+==2021年02月10日 13时25分40秒 #CDDC39==
+```java
 
+/**
+ * 冒泡排序
+ */
+public class bubbleSort {
+
+    public static void main(String[] args) {
+        int[] a = new int[]{9, 6, 8, 3, 0, 1};
+        bubblesort(a);
+        System.out.println("\n--------华丽的分割线--------");
+//        for (int num : a)
+//            System.out.println(num);
+        System.out.println(Arrays.toString(a));
+    }
+    private static void bubblesort(int[] arr) {
+        //定义两个变量,i控制大循环,j控制小比较,
+        int i, j;
+
+        for (i = 0; i < arr.length - 1; i++)
+
+            for (j = 0; j < arr.length - i - 1; j++) {
+
+                if (arr[j] > arr[j + 1]) {
+
+                    //如果当前位置更大,进行交换
+                    int t = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = t;
+                }
+            }
+
+    }
+}
+```
 
 
 
