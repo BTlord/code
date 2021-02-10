@@ -126,6 +126,7 @@ public class bubbleSort {
                 }
             }
             
+            //如果min和j交换了,就是找到了比j大的值,就让min的值和最开始的赋的索引i的值交换
             if (min != i) {
                 k = array[min];
                 array[min] = array[i];
