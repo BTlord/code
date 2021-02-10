@@ -89,9 +89,10 @@ public class bubbleSort {
         System.out.println(Arrays.toString(a));
     }
     private static void bubblesort(int[] arr) {
-        //定义两个变量,i控制大循环,j控制小比较,
+        
         int i, j;
-
+        //定义两个变量,i控制大循环,j控制小比较,
+        
         for (i = 0; i < arr.length - 1; i++)
 
             for (j = 0; j < arr.length - i - 1; j++) {
